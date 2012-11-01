@@ -10,7 +10,7 @@ alias pp='python -mjson.tool | pygmentize -l javascript'
 alias cgiserver="ifconfig | grep --color -o 'inet 1[079][^ ]*'; python -m CGIHTTPServer 8000" # cgi_directories ['/cgi-bin', '/htbin']
 alias webshare='share () { port=$1; ifconfig | grep --color -o "inet 1[079][^ ]*"; python -m SimpleHTTPServer ${port:-8000} ;}; share'
 alias Daemon='cd ~/Documents/workspace/Daemon/'
-alias OpenSource='cd ~/Documents/workspace/Apps/OpenSource/'
+alias OpenSource='cd ~/Documents/workspace/OpenSource/'
 alias Github='cd ~/Documents/workspace/Github/'
 
 title () { title=$@; echo -n -e "\033]0;${title}\007"; }
