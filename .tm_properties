@@ -1,0 +1,61 @@
+# Basic Settings
+#
+fontName         = "Monaco" 
+fontSize         = 16
+softTabs         = true
+tabSize          = 2
+softWrap         = true
+showWrapColumn   = true
+wrapColumn       = "Use Window Frame"
+
+# Extra files to include
+#
+myExtraIncludes  = ".tm_properties,.htaccess,.gitignore"
+fileBrowserGlob  = "{*,$myExtraIncludes}"
+include = "{$include,$myExtraIncludes}"
+
+# Hide vendor and tmp directories from search popups.
+#
+myExtraExcludes       = "vendor,tmp,pyc"
+excludeInFileChooser  = "{$excludeInFileChooser,$myExtraExcludes}" 
+excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}" 
+#excludeFiles   = "*.{tmp,pyc}"
+#excludeDirectories = "build,dist"
+
+# Configure git and hg
+#
+TM_HG            = "/usr/local/bin/hg"
+TM_GIT           = "/usr/bin/git"
+
+# show the path to the current tab's file in the window title 
+# (replace the 2 instances of 'username' in the string below 
+# with your mac username).
+windowTitle      = "$TM_DISPLAYNAME${TM_DIRECTORY/\A(?:\/Users\/username\w+\/?(.*)|(.+))\z/${2:? – ${2/\A\/Users\/username/~/}:${1/\A(?=.)/ – /}}/}"
+
+# special per-filetype rules can be specified like so:
+[ text ]
+showInvisibles   = false
+spellChecking    = true
+spellingLanguage = 'en'
+
+[ *.{md,mdown,markdown} ]
+showInvisibles   = false
+spellChecking    = true
+spellingLanguage = 'en'
+tabSize          = 4
+
+[ *.{py,sh} ]
+wrapColumn       = "Use Window Frame" # 80 "Use Window Frame" # choose one
+softWrap         = true
+showWrapColumn   = true
+tabSize          = 4
+
+[ source ]
+showInvisibles   = true
+
+[ {README,INSTALL,LICENSE,TODO} ]
+fileType         = "text.plain"
+
+[ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
+binary           = true
+
