@@ -28,5 +28,9 @@ HISTTIMEFORMAT="%F %T "
 HISTSIZE=2000
 export HISTTIMEFORMAT
 
-[[ -s "$HOME/Tools/private_profile" ]] && source "$HOME/Tools/private_profile"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+[[ -s "$HOME/Tools/private_profile" ]] && source "$HOME/Tools/private_profile"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

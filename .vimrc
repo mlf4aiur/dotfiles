@@ -100,9 +100,11 @@ vnoremap > >gv  " better indentation
 
 " Color scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
-" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-color wombat256mod
+" color wombat256mod  " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
+" color EspressoLibre
+color molokai
+" color jellybeans
 
 
 " Enable syntax highlighting
@@ -114,9 +116,6 @@ syntax on
 
 " Showing line numbers and length
 set number  " show line numbers
-set tw=79   " width of document (used by gd)
-set nowrap  " don't automatically wrap on load
-set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
 
@@ -144,7 +143,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Make search case insensitive
 set hlsearch
 set noincsearch            " incsearch is annoying
-set ignorecase             " Case insensitive searching
+" set ignorecase             " Case insensitive searching
 set smartcase              " Unless I really mean case sensitive
 
 
@@ -172,7 +171,7 @@ map <leader>n :NERDTreeToggle<CR>
 " Settings for vim-powerline
 " cd ~/.vim/bundle
 " git clone git://github.com/Lokaltog/vim-powerline.git
-" set laststatus=2
+set laststatus=2
 
 
 " Settings for ctrlp
