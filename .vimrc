@@ -102,9 +102,15 @@ vnoremap > >gv  " better indentation
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 set t_Co=256
 " color wombat256mod  " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-" color EspressoLibre
-color molokai
+color EspressoLibre
+" color molokai
 " color jellybeans
+
+
+" Showing line numbers and length
+set number  " show line numbers
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
 
 
 " Enable syntax highlighting
@@ -112,12 +118,6 @@ color molokai
 filetype off
 filetype plugin indent on
 syntax on
-
-
-" Showing line numbers and length
-set number  " show line numbers
-set colorcolumn=80
-highlight ColorColumn ctermbg=233
 
 
 " easier formatting of paragraphs
