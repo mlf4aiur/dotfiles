@@ -110,6 +110,8 @@ color EspressoLibre
 " Showing line numbers and length
 set number  " show line numbers
 set colorcolumn=80
+" setlocal colorcolumn=+1
+" setlocal colorcolumn=
 highlight ColorColumn ctermbg=233
 
 
@@ -134,9 +136,9 @@ set history=500    " keep 500 lines of command line history
 
 
 " Real programmers don't use TABs but spaces
-set tabstop=2 softtabstop=2 shiftwidth=2 shiftround expandtab
-autocmd FileType python set tabstop=4 softtabstop=4 shiftwidth=4 shiftround expandtab
-autocmd FileType sh set tabstop=4 softtabstop=4 shiftwidth=4 shiftround expandtab
+set tabstop=4 softtabstop=4 shiftwidth=4 shiftround expandtab
+autocmd FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2 shiftround expandtab
+autocmd FileType html set tabstop=2 softtabstop=2 shiftwidth=2 shiftround expandtab
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 
