@@ -158,6 +158,8 @@ call pathogen#infect()
 
 
 " Open NerdTree
+" cd ~/.vim/bundle
+" git clone git://github.com/scrooloose/nerdtree.git
 let NERDTreeQuitOnOpen = 1
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
