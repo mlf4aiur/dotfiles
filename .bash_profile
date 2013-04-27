@@ -8,7 +8,10 @@ alias vi='/usr/local/bin/vim'
 alias zcat='gzip -dc'
 alias subl="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
 alias tree='ls -R | grep ":$" | sed -e "s/:$//" -e "s/[^-][^\/]*\//--/g" -e "s/^/   /" -e "s/-/|/"'
-alias pp='python -mjson.tool | pygmentize -l javascript'
+# alias pp='python -mjson.tool | pygmentize -l javascript'
+# alias pp_xml='python ~/Tools/pp_xml.py | pygmentize -l xml'
+alias pp='python -mjson.tool'
+alias pp_xml='python ~/Tools/pp_xml.py'
 alias cgiserver="ifconfig | grep --color -o 'inet 1[079][^ ]*'; python -m CGIHTTPServer 8000" # cgi_directories ['/cgi-bin', '/htbin']
 alias webshare='share () { port=$1; ifconfig | grep --color -o "inet 1[079][^ ]*"; python -m SimpleHTTPServer ${port:-8000} ;}; share'
 alias Daemon='cd ~/Documents/workspace/Daemon/'
