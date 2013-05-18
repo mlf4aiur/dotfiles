@@ -1,0 +1,25 @@
+# Makes Control+b become the escape combination
+escape ^Bb
+
+setenv LC_CTYPE en_US.UTF-8
+defutf8 on
+vbell off
+
+# To clear the screen after closing some programs
+altscreen on
+
+# detach on hangup
+autodetach on
+defscrollback 10000
+
+# COLORS! and some useful terminfo
+term screen-256color
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+termcapinfo rxvt 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007' 
+
+# status line at the bottom, where is belongs
+caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%d %M %0c %{g}%H%{-}" 
+
+# Do not show startup message
+startup_message off
